@@ -1,0 +1,12 @@
+{
+  "repository": "none",
+  "scripts": {
+    "build": "./node_modules/.bin/wintersmith build -v -o ./build"
+  },
+  "dependencies": {
+    "moment": "2.3.x",
+    "underscore": "1.4.x",
+    "typogr": "0.5.x",
+    "wintersmith": "~2.0.10"
+  }
+}
