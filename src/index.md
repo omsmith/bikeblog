@@ -1,5 +1,5 @@
 ---
-title: Biking
+title: Cycling
 template: index.html
 ---
 
