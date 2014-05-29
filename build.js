@@ -12,11 +12,12 @@ var copyContent = function (files, metalsmith, done) {
 			file = files[file];
 			file.origContents = file.contents;
 		});
-	
+
 	done();
 };
 
 Metalsmith(__dirname)
+	.clean(false)
 	.source('src')
 	.destination('dist')
 	.use(collections({
