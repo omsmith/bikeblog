@@ -1,8 +1,7 @@
 {
   "repository": "none",
   "scripts": {
-    "build": "./node_modules/.bin/wintersmith build -v -o ./build",
-    "preview": "./node_modules/.bin/wintersmith preview"
+    "build": "node build.js"
   },
   "dependencies": {
     "handlebars": "^2.0.0-alpha.2",
