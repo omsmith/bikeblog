@@ -3,7 +3,8 @@ var Metalsmith = require('metalsmith'),
 	markdown = require('metalsmith-markdown'),
 	paginate = require('metalsmith-paginate'),
 	permalinks = require('metalsmith-permalinks'),
-	templates = require('metalsmith-templates');
+	templates = require('metalsmith-templates'),
+	assets = require('metalsmith-assets');
 
 var copyContent = function (files, metalsmith, done) {
 	Object
@@ -33,4 +34,8 @@ Metalsmith(__dirname)
 		pattern: ':collection/:title'
 	}))
 	.use(templates('handlebars'))
+	.use(assets({
+		source: './src/images',
+		destination: './images'
+	}))
 	.build();
